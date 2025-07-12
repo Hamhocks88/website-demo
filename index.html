@@ -11,6 +11,42 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	<!-- Custom styles -->
+		<style>
+		.about-photo-left {
+  float: left;
+  width: 412.16px;
+  height: 618.24px;
+  margin-right: 30px;
+  margin-bottom: 20px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.about-photo-right {
+  float: right;
+  width: 465px;
+  height: 618.24px;
+  margin-left: 30px;
+  margin-bottom: 20px;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 6px;
+}
+
+/* Add spacing between paragraphs */
+.wrapper.style5 .inner p {
+  margin-bottom: 1.25em;
+  line-height: 1.6;
+}
+
+/* Clear float after the second paragraph */
+.wrapper.style5 .inner p:nth-of-type(4)::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+		</style>
 	</head>
 	<body class="landing is-preload">
 
@@ -27,10 +63,8 @@
 									<div id="menu">
 										<ul>
 											<li><a href="index.html">About Me</a></li>
-											<li><a href="generic.html">Generic</a></li>
-											<li><a href="elements.html">Elements</a></li>
-											<!-- <li><a href="#">Sign Up</a></li> -->
-											<!-- <li><a href="#">Log In</a></li> -->
+											<li><a href="strava.html">Strava</a></li>
+											<!-- <li><a href="elements.html">Elements</a></li> -->
 										</ul>
 									</div>
 								</li>
@@ -43,9 +77,8 @@
 					<section id="banner">
 						<div class="inner">
 							<h2>Logan Roberts</h2>
-							<p>My space includes<br />
-							my resume, a quick bio<br />
-							and some of my hobbies.</p>
+							<p>About me, my resume<br />
+							and my favorite hobbies.</p>
 								<!-- <ul class="actions special"> -->
 								<!-- <li><a href="#" class="button primary">Activate</a></li> -->
 								<!-- </ul> -->
@@ -55,20 +88,44 @@
 
 
 				<!-- One -->
-					<section id="one" class="wrapper style1 special">
-						<div class="inner">
-							<header class="major">
-								<h2>My Resume</h2>
-								<p>Aliquam ut ex ut augue consectetur interdum. Donec amet imperdiet eleifend<br />
-								fringilla tincidunt. Nullam dui leo Aenean mi ligula, rhoncus ullamcorper.</p>
-							</header>
-							<ul class="icons major">
-								<li><span class="icon fa-gem major style1"><span class="label">Lorem</span></span></li>
-								<li><span class="icon fa-heart major style2"><span class="label">Ipsum</span></span></li>
-								<li><span class="icon solid fa-code major style3"><span class="label">Dolor</span></span></li>
-							</ul>
-						</div>
-					</section>
+					<section class="wrapper style5">
+							<div class="inner">
+
+								<h3>About Me</h3>
+								<p>
+									<img src="images/loganrobertsprofessional.jpeg" alt="" class="about-photo-left">
+
+									Hello, I am Logan Roberts — a Management Information Systems student at Wichita State University, graduating in December 2025.</p>
+
+								<p>I currently work as a Product Analyst Intern at Flint Hills Resources and am looking to acquire a broader skillset in Information Technology, so I'm learning web design!</p>
+
+								<p>Some of my hobbies include running, reading, cleaning my apartment, and playing sports with friends. I am far and beyond most passionate about running. I've ran multiple half marathons and am training for a full marathon in October 2025.</p>
+
+								<p>I'm planning on using this website as a fun side project when I'm not working or hobbying. Look out for updates and new features like: connecting my Strava statistics via Strava's user API, having a page that showcases all of my new running videos, and more(probably)</p>
+
+								<!-- <hr /> -->
+
+							</div>
+						</section>
+
+				<!-- Two -->
+					<section class="wrapper style5">
+							<div class="inner">
+
+								<h3>My Resume</h3>
+								<p>
+									<img src="images/LoganRobertsResumePicture.png" alt="" class="about-photo-right">
+
+									I am a Management Information Systems student at Wichita State University, graduating in December 2025, with a strong background in business technology, data analysis, and systems integration. As a Commercial Product Analyst Intern at Flint Hills Resources, I have worked on a major ERP decommission project, enhanced logistics tools, and collaborated with offshore development teams to deliver commercial system integrations that align with business goals.</p>
+
+									<p>In previous roles, I have demonstrated leadership and performance in customer-facing environments. At Club Carwash, I was recognized as a top company-wide salesperson and later promoted to Team Lead, where I trained new consultants and helped boost team performance by implementing data tracking and workshops. I also gained foundational experience in financial services as a teller and intern at The Valley State Bank.</p>
+
+									<p>Beyond work, I am actively involved in student leadership. I currently serve as Vice President for both the Community Service Board and the Asian Student Conference, where I have led large-scale events, increased engagement, and developed career-focused workshops. I am also building my technical skills in Python, SQL, and AWS, and I bring a people-first, solution-driven approach to every opportunity I take on.</p>
+
+								<!-- <hr /> -->
+
+							</div>
+						</section>	
 
 				<!-- Footer -->
 					<footer id="footer">
@@ -80,7 +137,7 @@
 							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
 						</ul>
 						<ul class="copyright">
-							<li>&copy; Untitled</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+							<li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 						</ul>
 					</footer>
 
